@@ -1,30 +1,12 @@
 package logical;
 
-public class Administracion extends Persona {
+public class Administracion extends Empleado {
 
-	private String usuario, password, posicion;
+	private String posicion;
 	
 	public Administracion(String nomb, String apel, String cedula, String estCivil, int edad, String user, String pass, String posicion) {
-		super(nomb, apel, cedula, estCivil, edad);
-		this.usuario = user;
-		this.password = pass;
+		super(nomb, apel, cedula, estCivil, edad, user, pass);
 		this.posicion = posicion;
-	}
-
-	public String getUsuario() {
-		return usuario;
-	}
-
-	public void setUsuario(String usuario) {
-		this.usuario = usuario;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
 	}
 
 	public String getPosicion() {

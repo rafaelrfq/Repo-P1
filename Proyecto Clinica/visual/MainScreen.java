@@ -82,10 +82,34 @@ public class MainScreen extends JFrame {
 		JMenu mnPacientes = new JMenu("Pacientes");
 		menuBar.add(mnPacientes);
 		
+		JMenuItem mntmRegistrarCita = new JMenuItem("Registrar Cita");
+		mntmRegistrarCita.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				RegistrarCita regCita = new RegistrarCita();
+				regCita.setVisible(true);
+			}
+		});
+		mnPacientes.add(mntmRegistrarCita);
+		
+		JMenuItem mntmListarPacientes = new JMenuItem("Listar Pacientes");
+		mnPacientes.add(mntmListarPacientes);
+		
 		JMenu mnEnfermedadesBajoObservacin = new JMenu("Enfermedades bajo observaci\u00F3n");
 		menuBar.add(mnEnfermedadesBajoObservacin);
 		
+		JMenuItem mntmAgregarEnfermedad = new JMenuItem("Agregar Enfermedad");
+		mnEnfermedadesBajoObservacin.add(mntmAgregarEnfermedad);
+		
+		JMenuItem mntmReporteDeEnfermedades = new JMenuItem("Reporte de Enfermedades");
+		mnEnfermedadesBajoObservacin.add(mntmReporteDeEnfermedades);
+		
 		JMenu mnVacunas = new JMenu("Vacunas");
 		menuBar.add(mnVacunas);
+		
+		JMenuItem mntmAgregarVacuna = new JMenuItem("Agregar Vacuna");
+		mnVacunas.add(mntmAgregarVacuna);
+		
+		JMenuItem mntmListar = new JMenuItem("Listar ");
+		mnVacunas.add(mntmListar);
 	}
 }

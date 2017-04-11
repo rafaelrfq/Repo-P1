@@ -6,8 +6,8 @@ public class Paciente extends Persona {
 	private HistoriaClinica miHistoria;
 	private String direccion;
 	
-	public Paciente(String nomb, String apel, String cedula, String estCivil, int edad, String aseguradora, int poliza, String direccion) {
-		super(nomb, apel, cedula, estCivil, edad);
+	public Paciente(String nomb, String sexo, String cedula, String estCivil, int edad, String aseguradora, int poliza, String direccion) {
+		super(nomb, sexo, cedula, estCivil, edad);
 		seg = new Seguro(aseguradora, poliza);
 		this.direccion = direccion;
 	}

@@ -5,8 +5,8 @@ public class Medico extends Empleado {
 	private String especialidad;
 	private int tiempo;
 	
-	public Medico(String nomb, String apel, String cedula, String estCivil, int edad, String usuario, String password, String especialidad, int tiempo) {
-		super(nomb, apel, cedula, estCivil, edad, usuario, password);
+	public Medico(String nomb, String sexo, String cedula, String estCivil, int edad, String usuario, String password, String especialidad, int tiempo) {
+		super(nomb, sexo, cedula, estCivil, edad, usuario, password);
 		this.especialidad = especialidad;
 		this.tiempo = tiempo;
 	}

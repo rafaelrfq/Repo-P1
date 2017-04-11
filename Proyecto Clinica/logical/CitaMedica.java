@@ -9,9 +9,11 @@ public class CitaMedica {
 	*/
 	private SimpleDateFormat fecha;
 	private String date;
+	private String doctorEscogido;
 	
-	public CitaMedica(String date) {
+	public CitaMedica(String date, String doctorEscogido) {
 		this.date = date;
+		this.doctorEscogido = doctorEscogido;
 		fecha = new SimpleDateFormat(date);
 	}
 
@@ -25,5 +27,9 @@ public class CitaMedica {
 
 	public SimpleDateFormat getFecha() {
 		return fecha;
+	}
+
+	public String getDoctorEscogido() {
+		return doctorEscogido;
 	}
 }

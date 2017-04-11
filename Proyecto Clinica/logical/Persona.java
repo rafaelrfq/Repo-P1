@@ -2,12 +2,12 @@ package logical;
 
 public abstract class Persona {
 	
-	private String nombre, apellido, cedula, estadoCivil;
+	private String nombre, sexo, cedula, estadoCivil;
 	private int edad;
 	
-	public Persona(String nomb, String apel, String cedula, String estCivil, int edad) {
+	public Persona(String nomb, String sexo, String cedula, String estCivil, int edad) {
 		this.nombre = nomb;
-		this.apellido = apel;
+		this.sexo = sexo;
 		this.cedula = cedula;
 		this.estadoCivil = estCivil;
 		this.edad = edad;
@@ -21,12 +21,12 @@ public abstract class Persona {
 		this.nombre = nombre;
 	}
 
-	public String getApellido() {
-		return apellido;
+	public String getSexo() {
+		return sexo;
 	}
 
-	public void setApellido(String apellido) {
-		this.apellido = apellido;
+	public void setSexo(String sexo) {
+		this.sexo = sexo;
 	}
 
 	public String getCedula() {

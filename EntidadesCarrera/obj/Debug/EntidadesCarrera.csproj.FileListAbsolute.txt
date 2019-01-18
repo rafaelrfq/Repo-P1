@@ -1,0 +1,2 @@
+C:\Users\Papo Gonzalez\source\repos\ConsoleApp1\EntidadesCarrera\obj\Debug\EntidadesCarrera.csprojAssemblyReference.cache
+C:\Users\Papo Gonzalez\source\repos\ConsoleApp1\EntidadesCarrera\obj\Debug\EntidadesCarrera.csproj.CoreCompileInputs.cache
